@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Commvault Lunch Portal | Survey</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles.css">
+
+
+   
+
+
+</head>
+
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg custom-navbar py-3">
+
+
+    <div class="container">
+
+
+        <a class="navbar-brand" href="index.html">
+
+
+            <img src="images/images/commvault-logo.svg"
+                 alt="Commvault Logo"
+                 class="navbar-logo">
+
+
+        </a>
+
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+
+           <span class="text-dark fw-bold fs-4">
+    ☰
+</span>
+
+
+
+
+        </button>
+
+
+        <div class="collapse navbar-collapse"
+             id="navbarNav">
+
+
+            <div class="navbar-nav ms-auto">
+
+
+                <a class="nav-link text-white-50"
+                   href="index.html">
+                    Home
+                </a>
+
+
+                <a class="nav-link text-white-50"
+                   href="menu.html">
+                    Menu
+                </a>
+
+
+                <a class="nav-link active-link"
+                   href="survey.html">
+                    Survey
+                </a>
+
+
+                <a class="nav-link text-white-50"
+                   href="contact.html">
+                    Contact
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</nav>
+   
+    <section class="survey-hero">
+
+
+    <div class="hero-overlay">
+
+
+        <div class="container text-center">
+
+
+            <span class="hero-pill">
+                 LUNCH SURVEY
+            </span>
+
+
+            <p class="lead mt-3">
+                Submit your lunch preferences for the upcoming week.
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+   <section class="survey-section py-5">
+
+
+    <div class="container">
+
+
+        <div class="survey-card-wrapper bg-white p-5">
+
+
+            <h2 class="fw-bold mb-2">
+                Food Order Week of July 6, 2026
+            </h2>
+
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+
+
+    <div id="preferenceBadge"
+         class="alert alert-info mb-0 flex-grow-1 me-3">
+    </div>
+
+
+    <button
+    class="btn btn-outline-secondary"
+    data-bs-toggle="modal"
+    data-bs-target="#preferenceModal">
+
+
+    Change Preference
+
+
+</button>
+</div>
+
+
+
+
+            <p class="text-secondary mb-5">
+                Please pick Veg / Non-Veg / Skip so that we can get an accurate count.
+            </p>
+
+
+            <form id="lunchSurveyForm">
+
+
+    <!-- MONDAY -->
+
+
+    <div class="survey-question">
+
+
+        <h4 class="fw-bold">
+            Monday - Papa John's Pizza
+        </h4>
+
+
+        <div class="form-check">
+
+
+            <input class="form-check-input"
+                   type="radio"
+                   id="mondayVeg"
+                   name="monday"
+                   value="Veg">
+
+
+            <label class="form-check-label"
+                   for="mondayVeg">
+
+
+                Cheese Pizza
+
+
+            </label>
+
+
+        </div>
+
+
+        <div class="form-check">
+
+
+            <input class="form-check-input"
+                   type="radio"
+                   id="mondayChicken"
+                   name="monday"
+                   value="Chicken">
+
+
+            <label class="form-check-label"
+                   for="mondayChicken">
+
+
+                Chicken Pizza
+
+
+            </label>
+
+
+        </div>
+
+
+        <div class="form-check">
+
+
+            <input class="form-check-input"
+                   type="radio"
+                   id="mondayMeat"
+                   name="monday"
+                   value="Meat Lovers">
+
+
+            <label class="form-check-label"
+                   for="mondayMeat">
+
+
+                Meat Lovers Pizza
+
+
+            </label>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- TUESDAY -->
+
+
+    <div class="survey-question">
+
+
+        <h4 class="fw-bold">
+            Tuesday - Pasta / South Indian
+        </h4>
+
+
+        <select class="form-select"
+                id="tuesdayChoice">
+
+
+            <option value="both">
+                Half Veg Pasta + Half Chicken Pasta
+            </option>
+
+
+            <option value="veg">
+                Veg Pasta Only
+            </option>
+
+
+            <option value="nonveg">
+                Chicken Pasta Only
+            </option>
+
+
+            <option value="southIndian">
+                South Indian (Veg)
+            </option>
+
+
+            <option value="skip">
+                Skip
+            </option>
+
+
+        </select>
+
+
+    </div>
+
+
+    <!-- WEDNESDAY -->
+
+
+    <div class="survey-question">
+
+
+        <h4 class="fw-bold">
+            Wednesday - Mediterranean
+        </h4>
+
+
+        <select class="form-select"
+                id="wednesdayChoice">
+
+
+            <option value="both">
+                Half Veg + Half Non-Veg
+            </option>
+
+
+            <option value="veg">
+                Veg Only
+            </option>
+
+
+            <option value="nonveg">
+                Non-Veg Only
+            </option>
+
+
+            <option value="skip">
+                Skip
+            </option>
+
+
+        </select>
+
+
+    </div>
+
+
+    <!-- THURSDAY -->
+
+
+    <div class="survey-question">
+
+
+        <h4 class="fw-bold">
+            Thursday - Samosa & Dhokla
+        </h4>
+
+
+        <div class="form-check">
+
+
+            <input class="form-check-input"
+                   type="radio"
+                   name="thursday">
+
+
+            <label class="form-check-label">
+                1 Serving
+            </label>
+
+
+        </div>
+
+
+        <div class="form-check">
+
+
+            <input class="form-check-input"
+                   type="radio"
+                   name="thursday">
+
+
+            <label class="form-check-label">
+                Skip
+            </label>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- FRIDAY BAGELS -->
+
+
+   <div class="survey-question">
+
+
+        <h4 class="fw-bold">
+            Friday Breakfast Bagels
+        </h4>
+
+
+        <div class="form-check">
+
+
+            <input class="form-check-input"
+                   type="radio"
+                   name="bagels">
+
+
+            <label class="form-check-label">
+                Yes, Count Me In
+            </label>
+
+
+        </div>
+
+
+        <div class="form-check">
+
+
+            <input class="form-check-input"
+                   type="radio"
+                   name="bagels">
+
+
+            <label class="form-check-label">
+                Skip
+            </label>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- FRIDAY SUSHI -->
+
+
+    <div class="survey-question">
+
+
+        <h4 class="fw-bold">
+            Friday Sushi (Choose Up To 3)
+        </h4>
+
+
+        <div class="form-check">
+            <input class="form-check-input sushi-option"
+                   type="checkbox">
+            <label class="form-check-label">
+                Sweet Potato Roll
+            </label>
+        </div>
+
+
+        <div class="form-check">
+            <input class="form-check-input sushi-option"
+                   type="checkbox">
+            <label class="form-check-label">
+                Avocado Roll
+            </label>
+        </div>
+
+
+        <div class="form-check">
+            <input class="form-check-input sushi-option"
+                   type="checkbox">
+            <label class="form-check-label">
+                Pumpkin Tempura Roll
+            </label>
+        </div>
+
+
+        <div class="form-check">
+            <input class="form-check-input sushi-option"
+                   type="checkbox">
+            <label class="form-check-label">
+                Shrimp & Avocado Roll
+            </label>
+        </div>
+
+
+        <div class="form-check">
+            <input class="form-check-input sushi-option"
+                   type="checkbox">
+            <label class="form-check-label">
+                Tuna Roll
+            </label>
+        </div>
+
+
+    </div>
+
+
+    <!-- ICE CREAM -->
+
+
+    <div class="survey-question">
+
+
+        <h4 class="fw-bold">
+            Friday Ice Cream Social
+        </h4>
+
+
+        <div class="form-check">
+
+
+            <input class="form-check-input"
+                   type="radio"
+                   name="icecream">
+
+
+            <label class="form-check-label">
+                Yes, Count Me In
+            </label>
+
+
+        </div>
+
+
+        <div class="form-check">
+
+
+            <input class="form-check-input"
+                   type="radio"
+                   name="icecream">
+
+
+            <label class="form-check-label">
+                Skip
+            </label>
+
+
+        </div>
+
+
+    </div>
+
+
+    <button type="submit"
+            class="btn btn-primary-action px-5 py-3">
+
+
+        Submit Lunch Order
+
+
+    </button>
+
+
+</form>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<div class="modal fade"
+     id="surveySuccessModal"
+     tabindex="-1">
+
+
+    <div class="modal-dialog modal-dialog-centered">
+
+
+        <div class="modal-content text-center p-4">
+
+
+            <div class="modal-body">
+
+
+                <h3 class="fw-bold text-success">
+                    Order Submitted!
+                </h3>
+
+
+                <p class="text-secondary">
+
+
+                    Your lunch selections have been recorded.
+
+
+                </p>
+
+
+                <button class="btn btn-primary-action"
+                        data-bs-dismiss="modal">
+
+
+                    Close
+
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+    </div>
+<div class="modal fade" id="preferenceModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center border-0 p-4">
+                <div class="modal-body">
+                    <h3 class="fw-bold mb-3">Welcome to the Lunch Portal</h3>
+                    <p class="text-secondary mb-4">What are your preferences?</p>
+                    <div class="d-grid gap-2">
+                        <input type="radio" class="btn-check" name="dietPreference" id="prefVeg" value="Vegetarian">
+                        <label class="btn btn-outline-custom" for="prefVeg">Vegetarian</label>
+
+
+                        <input type="radio" class="btn-check" name="dietPreference" id="prefNonVeg" value="Non-Vegetarian">
+                        <label class="btn btn-outline-custom" for="prefNonVeg">Non-Vegetarian</label>
+
+
+                        <input type="radio" class="btn-check" name="dietPreference" id="prefBoth" value="Both" checked>
+                        <label class="btn btn-outline-custom" for="prefBoth">Both</label>
+                    </div>
+                    <button id="submitPreferenceBtn" class="btn btn-primary-action mt-4 px-4">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+      <!-- FOOTER -->
+
+
+    <footer class="custom-footer py-5 text-white">
+
+
+        <div class="container">
+
+
+            <div class="row">
+
+
+                <div class="col-md-6">
+
+
+                    <h5 class="fw-bold">
+                        Commvault Lunch Portal
+                    </h5>
+
+
+                    <p class="text-white-50">
+                        Weekly lunch selections for employees.
+                    </p>
+
+
+                </div>
+
+
+                <div class="col-md-6 text-md-end">
+
+
+                    <h6 class="fw-bold mb-3">
+                        Quick Links
+                    </h6>
+
+
+                    <a href="index.html"
+                       class="text-white-50 text-decoration-none d-block">
+                        Home
+                    </a>
+
+
+                    <a href="menu.html"
+                       class="text-white-50 text-decoration-none d-block">
+                        Menu
+                    </a>
+
+
+                    <a href="survey.html"
+                       class="text-white-50 text-decoration-none d-block">
+                        Survey
+                    </a>
+
+
+                    <a href="contact.html"
+                       class="text-white-50 text-decoration-none d-block">
+                        Contact
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+<hr class="border-light opacity-25 my-4">
+
+
+<div class="text-center text-white-50 small">
+
+
+    © 2026 Commvault Lunch Portal. All rights reserved.
+
+
+</div>
+    </footer>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="script.js"></script>
+   
+
+
+</body>
+
+
+</html>
+
+
